@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
 
+    @IBOutlet weak var choosestatepicker: UIPickerView!
+    @IBOutlet weak var choosestatepickerbtn: UIButton!
+    let states = ["salam","bia","boro","naro","hala"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        choosestatepicker.dataSource=self
+        choosestatepicker.delegate=self
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +29,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func cyhpressed(_ sender: AnyObject) {
+        
+        }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return states.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return states [row]
+    }
+    
 
 }
 
