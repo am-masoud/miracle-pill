@@ -24,11 +24,25 @@
                                     <constraint firstAttribute="height" constant="92" id="xqW-o0-aJR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mircale pill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vu-8d-rBR">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="0kf-43-rSN"/>
+                                    <constraint firstAttribute="width" constant="101" id="9wD-lf-NKz"/>
+                                    <constraint firstAttribute="height" constant="38" id="qqS-o5-I1e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Vu-8d-rBR" secondAttribute="bottom" constant="472" id="hpV-6X-YgB"/>
                             <constraint firstItem="Rdq-nN-lKR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqQ-51-aBm"/>
+                            <constraint firstItem="4Vu-8d-rBR" firstAttribute="top" secondItem="Rdq-nN-lKR" secondAttribute="bottom" constant="25" id="iA7-1J-WGh"/>
                             <constraint firstItem="Rdq-nN-lKR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="k84-Ve-lWa"/>
+                            <constraint firstItem="4Vu-8d-rBR" firstAttribute="top" secondItem="Rdq-nN-lKR" secondAttribute="bottom" constant="25" id="pi9-BU-jIU"/>
+                            <constraint firstItem="4Vu-8d-rBR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yCP-od-EeR"/>
                         </constraints>
                     </view>
                 </viewController>
