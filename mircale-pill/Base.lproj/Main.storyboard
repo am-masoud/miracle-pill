@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,10 +35,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gy8-z5-VIm">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vYd-lZ-fP1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4Vu-8d-rBR" secondAttribute="bottom" constant="472" id="hpV-6X-YgB"/>
+                            <constraint firstItem="Gy8-z5-VIm" firstAttribute="top" secondItem="4Vu-8d-rBR" secondAttribute="bottom" constant="8" symbolic="YES" id="4be-8x-0xX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gy8-z5-VIm" secondAttribute="trailing" constant="50" id="LPq-eH-ajO"/>
+                            <constraint firstItem="Gy8-z5-VIm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="VyN-hD-bIl"/>
                             <constraint firstItem="Rdq-nN-lKR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqQ-51-aBm"/>
                             <constraint firstItem="4Vu-8d-rBR" firstAttribute="top" secondItem="Rdq-nN-lKR" secondAttribute="bottom" constant="25" id="iA7-1J-WGh"/>
                             <constraint firstItem="Rdq-nN-lKR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="k84-Ve-lWa"/>
